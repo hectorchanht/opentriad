@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0b">
+<title>OpenTriad — open the underworld, take it apart</title>
+<meta name="description" content="OpenTriad is a preservation archive and cultural-history explainer: the closed world of organised crime — Hong Kong triads, the Italian Mafia, the Japanese Yakuza, the Godfather's America — opened honestly, with fact and fiction labelled.">
+<meta property="og:title" content="OpenTriad — open the underworld, take it apart">
+<meta property="og:description" content="A preservation archive first: rescue the vanishing oral record — 洪門詩句、三十六誓、切口、塘口 — before the last generation that remembers it is gone. Fact and fiction, always labelled.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://opentriad.dawnstudio.app/">
+<meta property="og:site_name" content="OpenTriad">
+<meta property="og:image" content="https://opentriad.dawnstudio.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OpenTriad — Dawn Studio sun over the opened underworld archive">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenTriad — open the underworld, take it apart">
+<meta name="twitter:description" content="A preservation archive first: rescue the vanishing oral record before it is gone. Fact and fiction, always labelled.">
+<meta name="twitter:image" content="https://opentriad.dawnstudio.app/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<style>
+:root{
+  --bg:#0a0a0b; --panel:#131315; --panel2:#17171a; --line:#26262b;
+  --text:#f5f2ee; --muted:#a8a29b; --accent:#d64541; --accent-soft:#ff7a72;
+  --radius:16px;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans CJK TC",sans-serif;
+  --serif:Georgia,"Times New Roman","Noto Serif TC","Noto Serif CJK TC",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px;min-width:0}
+a{color:var(--accent-soft)}
+header.utility{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font-weight:700;letter-spacing:.02em;min-width:0}
+.brand img{width:40px;height:40px;flex:0 0 auto}
+.brand .hall{color:var(--muted);font-weight:500;font-size:.85rem}
+.lang-switch{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--panel);flex:0 0 auto}
+.lang-switch button{min-width:48px;min-height:34px;padding:5px 12px;border:0;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer;font:600 .88rem var(--sans)}
+.lang-switch button[aria-pressed="true"]{background:var(--text);color:var(--bg)}
+.hero{padding:38px 0 8px}
+.hero .mark{width:84px;height:84px}
+.hero h1{font-size:clamp(2.4rem,9vw,3.6rem);line-height:1.05;margin:.35em 0 .25em;font-weight:800;letter-spacing:-.01em;overflow-wrap:break-word}
+.hero .promise{font-family:var(--serif);font-size:clamp(1.15rem,4.6vw,1.45rem);line-height:1.5;color:#e8e2d9;max-width:34em}
+.hero .measure{margin-top:14px;color:var(--muted);font-size:1rem;max-width:36em}
+.hero .measure strong{color:var(--accent-soft);font-weight:700}
+section.block{padding:20px 0 4px}
+section.block>h2{font-size:clamp(1.4rem,6vw,1.9rem);margin:14px 0 8px}
+section.block>p{color:#e8e2d9;max-width:38em}
+section.block>p.sub{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:0 0 14px;min-width:0}
+.card h3{margin:.1em 0 .35em;font-size:1.15rem}
+.card p{margin:0;color:var(--muted)}
+.card p strong{color:var(--text)}
+.status{border-color:#4a2b29;background:linear-gradient(180deg,#1a1214,var(--panel))}
+.status .big{color:var(--text);font-size:1.05rem}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:9px 15px;font-size:.95rem;max-width:100%;overflow-wrap:break-word}
+ol.road{margin:0;padding-left:1.3em;color:#e8e2d9}
+ol.road li{margin:0 0 10px;max-width:38em}
+ol.road li span{color:var(--muted)}
+.quote{font-family:var(--serif);font-size:1.2rem;color:#e8e2d9;border-left:3px solid var(--accent);padding-left:16px;margin:18px 0}
+footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:26px 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem;margin-top:26px}
+footer p{margin:0}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.footer-legal{color:var(--muted);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.back-top{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line);border-radius:999px;color:var(--text);flex:0 0 auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:640px){ .card{padding:16px} header.utility{min-height:56px} footer{align-items:flex-start;flex-direction:column} }
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+  <header class="utility">
+    <a class="brand" href="#top" aria-label="OpenTriad home">
+      <img src="/icon-192.png" alt="OpenTriad logo" width="40" height="40">
+      <span>OpenTriad</span> <span class="hall" data-i18n="hall">· Dawn Studio</span>
+    </a>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false">繁中</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img class="mark" src="/icon-192.png" alt="OpenTriad mark — Dawn sun over the archive">
+    <h1>OpenTriad</h1>
+    <p class="promise" data-i18n="promise">Open the underworld — take it apart, and see why it fascinates.</p>
+    <p class="measure" data-i18n="measure">A <strong>preservation archive</strong> first, an explainer second: the screen canon is the door, the archive is the house. Educational and historical throughout — <strong>never a how-to, never glamour without the cost</strong>.</p>
+  </div>
+
+  <section class="block">
+    <h2 data-i18n="whatTitle">What it is</h2>
+    <p data-i18n="whatBody">The closed world of organised crime, opened: a free cultural-history explainer in the Dawn Open* pattern. The folk knowledge is dying — 老聯、塘口、天打雷劈（誓詞）and the rest of the oral tradition survive only inside people's memories. OpenTriad rescues that record as history, published from Canada, and lays the complete set out discovery-first: the whole map on one surface, every card linked to its neighbours.</p>
+    <div class="chips" style="margin-top:14px">
+      <span class="chip" data-i18n="chip1">World map — 香港三合會 · 意大利黑手黨 · 日本極道 · 美國 · 台灣 · 阿姆斯特丹</span>
+      <span class="chip" data-i18n="chip2">Fact vs fiction — every card labelled</span>
+      <span class="chip" data-i18n="chip3">The screen canon — 古惑仔 · The Godfather</span>
+      <span class="chip" data-i18n="chip4">典故詞彙庫 — 三刀六口 and the lost glossary</span>
+      <span class="chip" data-i18n="chip5">人物誌 — real figures, fictional icons, labelled</span>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 data-i18n="goalTitle">END GOAL</h2>
+    <p data-i18n="goalBody">Rescue the vanishing oral and folk record — 洪門詩句、三十六誓、切口、茶陣、職級、塘口 — before the last generation that remembers it is gone, and keep opening the map of the whole earth, chapter by chapter, forever: every theatre's origins, structure, ranks, rituals and codes, explained historically, with the myth and the history never passed off as each other.</p>
+    <p class="quote" data-i18n="quote">「我哋文字嘅根，唔可以畀佢唔見咗。」— the roots of our written culture must not be allowed to disappear.</p>
+  </section>
+
+  <section class="block">
+    <h2 data-i18n="roadTitle">ROADMAP</h2>
+    <p class="sub" data-i18n="roadSub">Sequence from the founding grill (2026-11-21) — the archive is the skeleton, the entertainment surface is the door.</p>
+    <ol class="road">
+      <li data-i18n="r1"><strong>Hong Kong, the flagship first chapter</strong> <span>— the root: 洪門 origins, ranks, the Thirty-Six Oaths, the glossary (Content Pack v1 is the seed corpus).</span></li>
+      <li data-i18n="r2"><strong>Japan （極道）, Italy (Mafia), America (the Godfather's world)</strong> <span>— the other founding theatres, each with its screen canon beside its real history.</span></li>
+      <li data-i18n="r3"><strong>Amsterdam + Taiwan deep chapters</strong> <span>— the Hong Kong diaspora axis and 竹聯幫/天道盟/四海幫； the elders who remember are the deadline.</span></li>
+      <li data-i18n="r4"><strong>口述留聲 — oral-history intake</strong> <span>— phase two: those who remember leave their record, every entry source-labelled before it enters the archive; pulled earlier for the Netherlands chapter.</span></li>
+      <li data-i18n="r5"><strong>Quizzes and interactivity</strong> <span>— phase two, on top of the reading archive of chapters, cards and timelines.</span></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <div class="card status">
+      <h3 data-i18n="statusTitle">STATUS</h3>
+      <p class="big" data-i18n="statusLine">Founding — initialized, first release in preparation / 創建中</p>
+      <p data-i18n="statusBody">This page is the live initialization of OpenTriad. The founding brief is on record; the first chapter is in preparation. Nothing here is presented as finished, and fiction is never presented as fact.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="footStudio">Dawn Studio · Independent software.</p>
+    <div class="links">
+      <a class="footer-legal" href="https://dawnstudio.app/examples">Examples</a>
+      <a class="footer-legal" href="https://dawnstudio.app/changelog">Changelog</a>
+      <a class="footer-legal" href="https://dawnstudio.app/blog">Blog</a>
+      <a class="footer-legal" href="https://dawnstudio.app/canon">Canon</a>
+      <a class="footer-legal" href="https://dawnstudio.app/privacy.html">Privacy</a>
+      <a class="back-top" href="#top" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7 8 2.5 12.5 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only">Back to top</span></a>
+    </div>
+  </footer>
+</div>
+<script>
+"use strict";
+var I18N = {
+  en: { hall:"· Dawn Studio",
+    promise:"Open the underworld — take it apart, and see why it fascinates.",
+    measure:"A <strong>preservation archive</strong> first, an explainer second: the screen canon is the door, the archive is the house. Educational and historical throughout — <strong>never a how-to, never glamour without the cost</strong>.",
+    whatTitle:"What it is",
+    whatBody:"The closed world of organised crime, opened: a free cultural-history explainer in the Dawn Open* pattern. The folk knowledge is dying — 老聯、塘口、天打雷劈（誓詞）and the rest of the oral tradition survive only inside people's memories. OpenTriad rescues that record as history, published from Canada, and lays the complete set out discovery-first: the whole map on one surface, every card linked to its neighbours.",
+    chip1:"World map — 香港三合會 · 意大利黑手黨 · 日本極道 · 美國 · 台灣 · 阿姆斯特丹",
+    chip2:"Fact vs fiction — every card labelled",
+    chip3:"The screen canon — 古惑仔 · The Godfather",
+    chip4:"典故詞彙庫 — 三刀六口 and the lost glossary",
+    chip5:"人物誌 — real figures, fictional icons, labelled",
+    goalTitle:"END GOAL",
+    goalBody:"Rescue the vanishing oral and folk record — 洪門詩句、三十六誓、切口、茶陣、職級、塘口 — before the last generation that remembers it is gone, and keep opening the map of the whole earth, chapter by chapter, forever: every theatre's origins, structure, ranks, rituals and codes, explained historically, with the myth and the history never passed off as each other.",
+    quote:"「我哋文字嘅根，唔可以畀佢唔見咗。」— the roots of our written culture must not be allowed to disappear.",
+    roadTitle:"ROADMAP",
+    roadSub:"Sequence from the founding grill (2026-11-21) — the archive is the skeleton, the entertainment surface is the door.",
+    r1:"<strong>Hong Kong, the flagship first chapter</strong> <span>— the root: 洪門 origins, ranks, the Thirty-Six Oaths, the glossary (Content Pack v1 is the seed corpus).</span>",
+    r2:"<strong>Japan （極道）, Italy (Mafia), America (the Godfather's world)</strong> <span>— the other founding theatres, each with its screen canon beside its real history.</span>",
+    r3:"<strong>Amsterdam + Taiwan deep chapters</strong> <span>— the Hong Kong diaspora axis and 竹聯幫/天道盟/四海幫； the elders who remember are the deadline.</span>",
+    r4:"<strong>口述留聲 — oral-history intake</strong> <span>— phase two: those who remember leave their record, every entry source-labelled before it enters the archive; pulled earlier for the Netherlands chapter.</span>",
+    r5:"<strong>Quizzes and interactivity</strong> <span>— phase two, on top of the reading archive of chapters, cards and timelines.</span>",
+    statusTitle:"STATUS",
+    statusLine:"Founding — initialized, first release in preparation / 創建中",
+    statusBody:"This page is the live initialization of OpenTriad. The founding brief is on record; the first chapter is in preparation. Nothing here is presented as finished, and fiction is never presented as fact.",
+    footStudio:"Dawn Studio · Independent software." },
+  zh: { hall:"· Dawn Studio",
+    promise:"打開黑社會 — 拆解佢，睇下點解佢咁有趣。",
+    measure:"<strong>搶救檔案館行先</strong>，娛樂拆解係門面：人為古惑仔入嚟，為歷史留低。全程教育／歷史角度 —— <strong>永遠唔係教學點入會，賣型之餘必定 show 埋代價</strong>。",
+    whatTitle:"呢樣係咩",
+    whatBody:"將封閉嘅黑社會世界打開：一個免費嘅文化歷史 explainer，行 Dawn Open* 模式。民間知識正在失傳 —— 老聯、塘口、天打雷劈（誓詞）呢啲口述傳統，只剩喺人嘅記憶入面。OpenTriad 由加拿大出版，將呢啲記錄當歷史搶救返嚟，並以 discovery-first 攤開成套：成張地圖一面睇晒，每張卡都同隔籬相連。",
+    chip1:"世界地圖 — 香港三合會 · 意大利黑手黨 · 日本極道 · 美國 · 台灣 · 阿姆斯特丹",
+    chip2:"真實 vs 虛構 — 每張卡標明",
+    chip3:"銀幕 canon — 古惑仔 · 教父",
+    chip4:"典故詞彙庫 — 三刀六口同失傳詞彙",
+    chip5:"人物誌 — 真人與虛構 icon，分開標明",
+    goalTitle:"END GOAL 終極目標",
+    goalBody:"喺最後一代記得嘅人離開之前，搶救正在消失嘅口述同民間記錄 —— 洪門詩句、三十六誓、切口、茶陣、職級、塘口 —— 並且永遠逐章打開成個地球嘅地圖：每個舞台嘅起源、架構、職級、儀式同規矩，全部以歷史講明，神話同史實永遠唔撈亂。",
+    quote:"「我哋文字嘅根，唔可以畀佢唔見咗。」",
+    roadTitle:"ROADMAP 路線圖",
+    roadSub:"次序嚟自立派 grill（2026-11-21）—— 檔案館為骨、娛樂為門面。",
+    r1:"<strong>香港旗艦首章</strong> <span>—— 根：洪門起源、職級、三十六誓、詞彙庫（Content Pack v1 係種子語料）。</span>",
+    r2:"<strong>日本（極道）、意大利（黑手黨）、美國（教父世界）</strong> <span>—— 其餘創始舞台，每章銀幕 canon 同真實歷史並排。</span>",
+    r3:"<strong>阿姆斯特丹 + 台灣深章</strong> <span>—— 香港離散軸線同竹聯幫/天道盟/四海幫；記得嘅長輩，就係期限。</span>",
+    r4:"<strong>口述留聲投稿</strong> <span>—— 第二期：記得嘅人留低佢嗰份，每條經來源標籤核實先入檔；荷蘭章會提早開。</span>",
+    r5:"<strong>測驗與互動</strong> <span>—— 第二期，加喺章節＋卡片＋時間線嘅閱讀檔案館之上。</span>",
+    statusTitle:"STATUS 現況",
+    statusLine:"Founding — initialized, first release in preparation / 創建中",
+    statusBody:"呢頁係 OpenTriad 嘅 live 初始化。立派文件已存檔；第一章準備中。呢度冇任何嘢扮成已完成，虛構亦永遠唔會扮成事實。",
+    footStudio:"Dawn Studio · 獨立軟件。" }
+};
+var lang = "en";
+function apply(){
+  document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+  var els = document.querySelectorAll("[data-i18n]");
+  for (var i=0;i<els.length;i++){ var k = els[i].getAttribute("data-i18n"); if (I18N[lang][k]) els[i].innerHTML = I18N[lang][k]; }
+  var lb = document.querySelectorAll(".lang-switch button");
+  for (var j=0;j<lb.length;j++) lb[j].setAttribute("aria-pressed", lb[j].getAttribute("data-lang") === lang ? "true" : "false");
+}
+var btns = document.querySelectorAll(".lang-switch button");
+for (var b=0;b<btns.length;b++) btns[b].addEventListener("click", function(){ lang = this.getAttribute("data-lang"); apply(); });
+</script>
+</body>
+</html>
